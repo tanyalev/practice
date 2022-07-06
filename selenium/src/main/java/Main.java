@@ -1,3 +1,7 @@
+package main.java;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Main {
@@ -7,7 +11,7 @@ public class Main {
 
         driver.get("https://www.google.com.ua/");
 
-        WebElement input = driver.findElement(By.Xpath("//input[@aria-label='Найти']"));
+        WebElement input = driver.findElement(By.xpath("//input[@aria-label='Найти']"));
 
         input.click();
     }
