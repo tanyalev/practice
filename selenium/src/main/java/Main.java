@@ -6,5 +6,9 @@ public class Main {
         ChromeDriver driver = new ChromeDriver();
 
         driver.get("https://www.google.com.ua/");
+
+        WebElement input = driver.findElement(By.Xpath("//input[@aria-label='Найти']"));
+
+        input.click();
     }
 }
